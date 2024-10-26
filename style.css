@@ -1,0 +1,105 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Pomodoro Timer */
+.pomodoro-timer,
+.todo-list {
+    padding: 2em;
+    width: 50%;
+}
+
+.pomodoro-timer {
+    background-color: #e3f2fd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-display {
+    font-size: 3em;
+    margin: 1em 0;
+}
+
+.timer-controls button {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.timer-controls button:hover {
+    background-color: #1976d2;
+}
+
+/* To-Do List */
+.todo-list {
+    background-color: #ffffff;
+}
+
+.todo-input {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+#task-input {
+    flex: 1;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#add-task {
+    padding: 0.5em 1em;
+    margin-left: 0.5em;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tasks {
+    list-style: none;
+}
+
+#tasks li {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tasks li button {
+    background: none;
+    border: none;
+    color: #e53935;
+    cursor: pointer;
+}
